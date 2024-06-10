@@ -1,0 +1,73 @@
+@model IEnumerable<Project.Models.Auteur>
+
+@{
+  ViewData["Title"] = "List of Authors";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List of Authors</h2>
+
+<form class="form-inline my-2 my-lg-0" asp-action="Index" method="get">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search by Name" name="search" aria-label="Search">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+
+<div class="mt-4">
+  <ul class="list-group">
+    @foreach (var auteur in Model)
+    {
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h5>@auteur.Prenom @auteur.Nom</h5>
+            <h6 class="text-muted">Books:</h6>
+            <ul>
+              @if (auteur.Livres.Any())
+              {
+                @foreach (var livre in auteur.Livres)
+                {
+                  <li>@livre.Titre</li>
+                }
+              }
+              else
+              {
+                <li>No Books</li>
+              }
+            </ul>
+          </div>
+          <div>
+            <a asp-action="Edit" asp-route-id="@auteur.ID" class="btn btn-primary btn-sm">Edit</a>
+            <a asp-action="Details" asp-route-id="@auteur.ID" class="btn btn-info btn-sm">Details</a>
+            <a asp-action="Delete" asp-route-id="@auteur.ID" class="btn btn-danger btn-sm">Delete</a>
+          </div>
+        </div>
+      </li>
+    }
+  </ul>
+</div>
+
+<a asp-action="Create" class="btn btn-primary mt-3">Add Author</a>
+
+@section Styles {
+  <style>
+    .list-group-item {
+      margin-bottom: 10px;
+    }
+
+    .list-group-item h5 {
+      margin-bottom: 5px;
+    }
+
+    .list-group-item ul {
+      padding-left: 20px;
+    }
+
+    .list-group-item ul li {
+      list-style-type: disc;
+    }
+
+    .btn {
+      margin-right: 5px;
+    }
+  </style>
+}

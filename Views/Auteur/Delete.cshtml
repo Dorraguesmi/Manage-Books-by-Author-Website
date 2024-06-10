@@ -1,0 +1,14 @@
+@model Project.Models.Auteur
+
+<h2>Sure to Delete?</h2>
+
+<div>
+  <h4>@Model.Nom</h4>
+  <h4>@Model.Prenom</h4>
+</div>
+
+<form asp-action="Delete">
+  <input type="hidden" asp-for="ID" />
+  <button type="submit" class="btn btn-danger">Delete</button>
+  <a asp-action="Index">Cancel</a>
+</form>

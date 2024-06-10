@@ -1,0 +1,93 @@
+@model Project.Models.ViewModels.LoginViewModel
+@{
+  ViewBag.Title = "User Login";
+}
+
+<h1 class="text-center mt-5">User Login</h1>
+
+@{
+  var returnUrl = Context.Request.Query["ReturnUrl"];
+}
+
+<div class="d-flex justify-content-center mt-4">
+  <div class="col-md-6">
+    <div class="card shadow">
+      <div class="card-body">
+        <form asp-route-returnurl="@returnUrl" method="post">
+          <div asp-validation-summary="All" class="text-danger"></div>
+
+          <div class="form-group mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+              <input asp-for="Email" class="form-control" />
+            </div>
+            <span asp-validation-for="Email" class="text-danger"></span>
+          </div>
+
+          <div class="form-group mb-3">
+            <label asp-for="Password" class="form-label"></label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+              <input asp-for="Password" class="form-control" type="password" />
+            </div>
+            <span asp-validation-for="Password" class="text-danger"></span>
+          </div>
+
+          <div class="form-group form-check mb-3">
+            <input asp-for="RememberMe" class="form-check-input" />
+            <label asp-for="RememberMe" class="form-check-label">
+              @Html.DisplayNameFor(m => m.RememberMe)
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+@section Styles {
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .card {
+      border-radius: 10px;
+    }
+
+    .card-body {
+      padding: 30px;
+    }
+
+    .form-label {
+      font-weight: bold;
+    }
+
+    .input-group-text {
+      background-color: #fff;
+      border: none;
+    }
+
+    .input-group-text i {
+      color: #6c757d;
+    }
+
+    .form-control {
+      border-radius: 10px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+  </style>
+}

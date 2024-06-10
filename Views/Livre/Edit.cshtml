@@ -1,0 +1,56 @@
+@model Project.Models.Livre
+
+@{
+  ViewData["Title"] = "Edit Book";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit Book</h2>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+  <input type="hidden" asp-for="Id" />
+  <div class="form-group">
+    <label asp-for="Titre" class="control-label"></label>
+    <input asp-for="Titre" class="form-control" />
+    <span asp-validation-for="Titre" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label for="ImagePath">Book Cover</label>
+    <input type="file" class="form-control-file" id="ImagePath" name="ImagePath" accept="image/*" />
+  </div>
+  <div class="form-group">
+    <label asp-for="Maisondédition" class="control-label"></label>
+    <input asp-for="Maisondédition" class="form-control" />
+    <span asp-validation-for="Maisondédition" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Datedédition" class="control-label"></label>
+    <input asp-for="Datedédition" class="form-control" />
+    <span asp-validation-for="Datedédition" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Résumé" class="control-label"></label>
+    <textarea asp-for="Résumé" class="form-control"></textarea>
+    <span asp-validation-for="Résumé" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label for="AuteurId" class="control-label">Author</label>
+    <select class="form-control" id="AuteurId" name="AuteurId" asp-items="ViewBag.Auteurs">
+      <option value="">-- Select an Author --</option>
+    </select>
+    <span asp-validation-for="AuteurId" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <input type="submit" value="Save" class="btn btn-primary" />
+  </div>
+</form>
+
+<div>
+  <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+  @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+  }
+}

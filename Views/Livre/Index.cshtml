@@ -1,0 +1,67 @@
+@model IEnumerable<Project.Models.Livre>
+
+@{
+  ViewData["Title"] = "List of Books";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List of Books</h2>
+
+<form class="form-inline my-2 my-lg-0" asp-action="Index" method="get">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search by title" name="search" aria-label="Search">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+
+<div class="row mt-4">
+  @foreach (var livre in Model)
+  {
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <!-- Check if the Livre object has an ImageUrl property -->
+        @if (!string.IsNullOrEmpty(livre.ImagePath))
+        {
+          <img src="@livre.ImagePath" class="card-img-top" alt="Book Image">
+        }
+        <div class="card-body">
+          <h5 class="card-title">@livre.Titre</h5>
+          <h6 class="card-subtitle mb-2 text-muted">@livre.Maisondédition</h6>
+          <p class="card-text"><strong>Edition Date:</strong> @livre.Datedédition.ToShortDateString()</p>
+          <p class="card-text">@livre.Résumé</p>
+          <p class="card-text"><strong>Author:</strong> @livre.Auteur?.Prenom @livre.Auteur?.Nom</p>
+          <a asp-action="Edit" asp-route-id="@livre.Id" class="btn btn-primary">Edit</a>
+          <a asp-action="Details" asp-route-id="@livre.Id" class="btn btn-info">Details</a>
+          <a asp-action="Delete" asp-route-id="@livre.Id" class="btn btn-danger">Delete</a>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+
+<a asp-action="Create" class="btn btn-primary mt-3">Add Book</a>
+
+@section Styles {
+  <style>
+    .card {
+      margin-bottom: 20px;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-subtitle {
+      margin-bottom: 1rem;
+      color: #6c757d;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .btn {
+      margin-right: 5px;
+    }
+  </style>
+}

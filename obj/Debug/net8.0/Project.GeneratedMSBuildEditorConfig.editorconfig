@@ -1,0 +1,115 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Project
+build_property.RootNamespace = Project
+build_property.ProjectDir = /home/dorra/dotnet/Project/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/dorra/dotnet/Project
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/dorra/dotnet/Project/Views/Admin/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQWNjZXNzRGVuaWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Admin/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQ3JlYXRlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Admin/EditRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRWRpdFJvbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Admin/EditUsersInRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRWRpdFVzZXJzSW5Sb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Admin/ListRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vTGlzdFJvbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Auteur/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0ZXVyL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Auteur/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0ZXVyL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Auteur/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0ZXVyL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Auteur/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0ZXVyL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Auteur/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0ZXVyL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Livre/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cmUvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Livre/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cmUvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Livre/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cmUvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Livre/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cmUvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Livre/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cmUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/dorra/dotnet/Project/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-r07nuq4tb0
